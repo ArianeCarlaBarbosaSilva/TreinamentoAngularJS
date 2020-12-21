@@ -1,0 +1,22 @@
+{
+  "name": "angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArianeCarlaBarbosaSilva/TreinamentoAngularJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArianeCarlaBarbosaSilva/TreinamentoAngularJS/issues"
+  },
+  "homepage": "https://github.com/ArianeCarlaBarbosaSilva/TreinamentoAngularJS#readme",
+  "dependencies": {
+    "angular": "^1.8.2"
+  }
+}

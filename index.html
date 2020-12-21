@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script type="text/javascript" src="node_modules/angular//angular.min.js"></script>
+</head>
+<body ng-app ng-init="meuNome='Ariane'; meuSobrenome='Silva'">
+    <input type="text" ng-model="meuNome">
+    <h1>Olá {{ meuNome }}</h1>
+    <h1>Sobrenome: {{ meuSobrenome }}</h1>
+    <br/>
+</body>
+</html>
