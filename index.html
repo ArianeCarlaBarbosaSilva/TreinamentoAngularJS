@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='loja'>
 <head>
     <meta charset="UTF-8">
-    <title>AngularJS</title>
+    <title>Loja App</title>
     <script type="text/javascript" src="node_modules/angular//angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/MeuController.js"></script>
 </head>
-<body ng-app ng-init="meuNome='Ariane'; meuSobrenome='Silva'">
-    <input type="text" ng-model="meuNome">
-    <h1>Olá {{ meuNome }}</h1>
-    <h1>Sobrenome: {{ meuSobrenome }}</h1>
+<body>
+    <div ng-controller="MeuController as ctrl">
+        <h1> {{ ctrl.value }}</h1>
+        <input ng-model="ctrl.value">
+        <button ng-click="ctrl.incrementar()">+</button>
+    </div>
     <br/>
 </body>
 </html>
