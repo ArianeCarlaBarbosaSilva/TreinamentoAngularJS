@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Loja App</title>
-    <script type="text/javascript" src="node_modules/angular//angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular-route.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/controllers/MeuController.js"></script>
+    <script type="text/javascript" src="js/controllers/tutorialCtrlModule.js"></script>
 </head>
-<body ng-controller="MeuController as ctrl">
-    <form action="" name="nossoForm">
-        <input type="text" name="nome" id="nome" ng-model="nome" required="required">
-        <input type="text" name="sobrenome" id="sobrenome" ng-model="sobrenome" required="required">
-        <button>Salvar</button>
-    </form>
+<body>
+    <h1>Single Page Application</h1>
+    <div ng-view></div>
 </body>
 </html>
