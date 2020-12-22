@@ -7,12 +7,11 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers/MeuController.js"></script>
 </head>
-<body>
-    <div ng-controller="MeuController as ctrl">
-        <h1> {{ ctrl.value }}</h1>
-        <input ng-model="ctrl.value">
-        <button ng-click="ctrl.incrementar()">+</button>
-    </div>
-    <br/>
+<body ng-controller="MeuController as ctrl">
+    <form action="" name="nossoForm">
+        <input type="text" name="nome" id="nome" ng-model="nome" required="required">
+        <input type="text" name="sobrenome" id="sobrenome" ng-model="sobrenome" required="required">
+        <button>Salvar</button>
+    </form>
 </body>
 </html>
